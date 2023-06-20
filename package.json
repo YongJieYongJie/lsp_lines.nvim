@@ -1,0 +1,29 @@
+{
+  "name": "lsp_lines",
+  "version": "0.0.1",
+  "description": "Show diagnostics using virtual lines",
+  "main": "coc-extension/index.js",
+  "type": "commonjs",
+  "engines": {
+    "coc": "^0.0.81"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "lsp_lines",
+      "properties": {
+        "lsp_lines.currentLineOnly": {
+          "type": "boolean",
+          "default": false,
+          "description": "When enabled, lsp_lines will only show diagnostics for the current line."
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "coc.nvim": "^0.0.81"
+  }
+}
